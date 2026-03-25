@@ -1,33 +1,47 @@
+import officeSpace from "@/assets/office-space.jpg";
+
 const UrgencySection = () => {
   return (
-    <section className="py-24 md:py-32 section-fade">
-      <div className="container px-6 max-w-4xl text-center">
-        <p className="font-display text-sm uppercase tracking-[0.3em] text-primary mb-4">
-          The math is simple
-        </p>
-        <h2 className="font-display text-3xl md:text-5xl font-bold mb-10">
-          Every month you wait costs you <span className="text-gradient">real money.</span>
-        </h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          {[
-            { value: "30", unit: "days", desc: "of lost leads you'll never get back" },
-            { value: "67%", unit: "", desc: "of the buyer's journey happens online before they ever call you" },
-            { value: "10x", unit: "", desc: "more expensive to win a new customer than keep one" },
-          ].map((stat, i) => (
-            <div key={i} className="bg-card border border-border rounded-2xl p-8">
-              <p className="font-display text-5xl font-bold text-gradient mb-1">
-                {stat.value}<span className="text-2xl text-muted-foreground">{stat.unit}</span>
-              </p>
-              <p className="text-muted-foreground">{stat.desc}</p>
+    <section className="py-20 md:py-28">
+      <div className="container px-6 max-w-6xl">
+        <div className="flex flex-col md:flex-row items-center gap-12">
+          <div className="flex-1">
+            <div className="rounded-2xl overflow-hidden shadow-xl shadow-foreground/5 border border-border">
+              <img
+                src={officeSpace}
+                alt="Modern workspace"
+                loading="lazy"
+                className="w-full h-auto object-cover"
+              />
             </div>
-          ))}
-        </div>
+          </div>
+          <div className="flex-1">
+            <p className="font-display text-sm font-semibold uppercase tracking-widest text-primary mb-3">
+              The simple math
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-6">
+              Every week you wait is a week your competitors <span className="text-primary">get ahead.</span>
+            </h2>
+            
+            <div className="space-y-5 mb-8">
+              {[
+                { value: "67%", text: "of people research online before they ever call a business" },
+                { value: "10x", text: "more expensive to find new customers than keep existing ones" },
+                { value: "5 min", text: "— that's how fast a hot lead turns cold without follow-up" },
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-4">
+                  <span className="font-display text-xl font-extrabold text-primary whitespace-nowrap">{item.value}</span>
+                  <p className="text-muted-foreground text-lg">{item.text}</p>
+                </div>
+              ))}
+            </div>
 
-        <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          Your competitors are investing in systems like these <span className="text-foreground font-semibold">right now</span>. 
-          The gap between you and them gets wider every week. Let's close it.
-        </p>
+            <p className="text-lg text-foreground leading-relaxed">
+              You don't need to figure this out alone. We've done this hundreds of times. 
+              <span className="font-semibold"> Let us show you exactly what's possible.</span>
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );

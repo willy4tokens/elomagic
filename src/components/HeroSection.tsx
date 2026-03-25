@@ -1,43 +1,52 @@
 import { Button } from "@/components/ui/button";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroPeople from "@/assets/hero-people.jpg";
 import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      <img
-        src={heroBg}
-        alt="Growth and opportunity"
-        className="absolute inset-0 w-full h-full object-cover opacity-40"
-        width={1920}
-        height={1080}
-      />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
-      
-      <div className="relative z-10 container px-6 text-center max-w-4xl">
-        <p className="font-display text-sm uppercase tracking-[0.3em] text-primary mb-6">
-          Stop guessing. Start growing.
-        </p>
-        
-        <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] mb-8">
-          Your competitors
-          <br />
-          <span className="text-gradient">aren't waiting.</span>
-        </h1>
-        
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
-          Every day without a system that brings in customers, converts them, and keeps them
-          — is a day your business falls behind. We fix that.
-        </p>
-        
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button variant="hero" size="lg" className="px-10 py-6 text-lg" onClick={() => document.getElementById('cta')?.scrollIntoView({ behavior: 'smooth' })}>
-            See What You're Missing
-            <ArrowRight className="ml-2 w-5 h-5" />
-          </Button>
-          <Button variant="heroOutline" size="lg" className="px-10 py-6 text-lg" onClick={() => document.getElementById('problem')?.scrollIntoView({ behavior: 'smooth' })}>
-            How It Works
-          </Button>
+    <section className="relative pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden">
+      <div className="container px-6 max-w-6xl">
+        <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
+          <div className="flex-1 text-center md:text-left">
+            <div className="inline-block bg-primary/10 text-primary font-display font-semibold text-sm px-4 py-1.5 rounded-full mb-6">
+              For business owners who want more customers
+            </div>
+            
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-6 text-foreground">
+              You deserve a business 
+              that <span className="text-primary">grows on its own.</span>
+            </h1>
+            
+            <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-8 leading-relaxed">
+              We build the system that brings people to your door, turns them into customers, and keeps them coming back. Simple as that.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+              <Button variant="hero" size="lg" className="px-8 py-6 text-base" onClick={() => document.getElementById('cta')?.scrollIntoView({ behavior: 'smooth' })}>
+                Get Your Free Growth Plan
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+              <Button variant="heroOutline" size="lg" className="px-8 py-6 text-base" onClick={() => document.getElementById('problem')?.scrollIntoView({ behavior: 'smooth' })}>
+                See How It Works
+              </Button>
+            </div>
+            
+            <p className="text-sm text-muted-foreground mt-5">
+              ✓ Free · ✓ No pressure · ✓ Takes 15 minutes
+            </p>
+          </div>
+          
+          <div className="flex-1">
+            <div className="rounded-3xl overflow-hidden shadow-2xl shadow-primary/10 border border-border">
+              <img
+                src={heroPeople}
+                alt="Happy business owners collaborating"
+                className="w-full h-auto object-cover"
+                width={1400}
+                height={934}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
