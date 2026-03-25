@@ -1,48 +1,58 @@
-import dashboardImg from "@/assets/dashboard.jpg";
-import growthImg from "@/assets/growth.jpg";
+import teamMeeting from "@/assets/team-meeting.jpg";
+import teamWork from "@/assets/team-work.jpg";
 import { Check } from "lucide-react";
 
 const services = [
   {
-    label: "Websites That Convert",
-    points: ["Built to turn visitors into customers", "Fast, clean, impossible to ignore", "Every button, every word — placed with purpose"],
-    image: dashboardImg,
-    imageAlt: "High-converting analytics dashboard",
+    label: "A Website That Actually Brings In Business",
+    points: [
+      "Built so visitors become customers — not just visitors",
+      "Looks amazing on every device — phones, tablets, desktops",
+      "Every word, every button — placed to make people take action",
+    ],
+    image: teamMeeting,
+    imageAlt: "Team reviewing a website strategy together",
   },
   {
-    label: "Traffic & AI-Powered Conversions",
-    points: ["Get found by the right people", "AI identifies your best leads instantly", "Turn clicks into calls, meetings, and sales"],
-    image: growthImg,
-    imageAlt: "Growth trajectory visualization",
+    label: "Get Found Online & Turn Clicks Into Customers",
+    points: [
+      "Show up where your customers are already looking",
+      "Smart AI helps you focus on your best opportunities",
+      "More calls, more bookings, more sales — on autopilot",
+    ],
+    image: teamWork,
+    imageAlt: "Team collaborating on growth strategy",
   },
 ];
 
 const ValueSection = () => {
   return (
-    <section className="py-24 md:py-32">
+    <section className="py-20 md:py-28">
       <div className="container px-6 max-w-6xl">
-        <p className="font-display text-sm uppercase tracking-[0.3em] text-primary mb-4 text-center">
-          What we build for you
-        </p>
-        <h2 className="font-display text-3xl md:text-5xl font-bold text-center mb-6">
-          A complete system. <span className="text-gradient">Not just a website.</span>
-        </h2>
-        <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-20 text-lg">
-          We connect every step — from the first click to the long-term customer — so nothing falls through the cracks.
-        </p>
+        <div className="text-center mb-16">
+          <p className="font-display text-sm font-semibold uppercase tracking-widest text-primary mb-3">
+            What we do for you
+          </p>
+          <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4">
+            Everything you need to grow. <span className="text-primary">Nothing you don't.</span>
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+            We connect every piece — so customers find you, choose you, and stay with you.
+          </p>
+        </div>
 
-        <div className="space-y-24">
+        <div className="space-y-20">
           {services.map((service, i) => (
             <div
               key={i}
-              className={`flex flex-col ${i % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-12 items-center`}
+              className={`flex flex-col ${i % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-10 items-center`}
             >
               <div className="flex-1">
-                <h3 className="font-display text-2xl md:text-3xl font-bold mb-6">{service.label}</h3>
+                <h3 className="font-display text-2xl md:text-3xl font-bold mb-5">{service.label}</h3>
                 <ul className="space-y-4">
                   {service.points.map((point, j) => (
                     <li key={j} className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-full bg-primary/15 flex items-center justify-center mt-0.5 shrink-0">
+                      <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5 shrink-0">
                         <Check className="w-3.5 h-3.5 text-primary" />
                       </div>
                       <span className="text-lg text-muted-foreground">{point}</span>
@@ -51,12 +61,12 @@ const ValueSection = () => {
                 </ul>
               </div>
               <div className="flex-1">
-                <div className="rounded-2xl overflow-hidden border border-border glow-box">
+                <div className="rounded-2xl overflow-hidden shadow-xl shadow-foreground/5 border border-border">
                   <img
                     src={service.image}
                     alt={service.imageAlt}
                     loading="lazy"
-                    className="w-full h-auto"
+                    className="w-full h-auto object-cover"
                   />
                 </div>
               </div>
@@ -64,18 +74,17 @@ const ValueSection = () => {
           ))}
         </div>
 
-        {/* Follow-up & Custom Builds */}
-        <div className="mt-24 grid md:grid-cols-2 gap-8">
-          <div className="bg-card border border-border rounded-2xl p-10 hover:border-primary/30 transition-all duration-500">
-            <h3 className="font-display text-2xl font-bold mb-4">Long-Term Follow-Up</h3>
+        <div className="mt-20 grid md:grid-cols-2 gap-6">
+          <div className="bg-card border border-border rounded-2xl p-9 hover:shadow-lg hover:shadow-primary/5 transition-all duration-400">
+            <h3 className="font-display text-xl font-bold mb-3">We Follow Up So You Don't Have To</h3>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Most sales happen after the 5th contact. We build automated follow-up systems that nurture leads for weeks and months — so you close deals while you sleep.
+              Most sales happen after the 5th conversation. We set up smart follow-ups that keep working — emails, texts, reminders — while you focus on running your business.
             </p>
           </div>
-          <div className="bg-card border border-border rounded-2xl p-10 hover:border-primary/30 transition-all duration-500">
-            <h3 className="font-display text-2xl font-bold mb-4">Custom Builds</h3>
+          <div className="bg-card border border-border rounded-2xl p-9 hover:shadow-lg hover:shadow-primary/5 transition-all duration-400">
+            <h3 className="font-display text-xl font-bold mb-3">Need Something Custom? We Build It.</h3>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Need something unique? Portals, dashboards, booking systems, integrations — if it helps you win more business, we build it.
+              Booking systems, customer portals, special tools — if it helps your business run smoother and make more money, we'll make it happen.
             </p>
           </div>
         </div>

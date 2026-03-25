@@ -4,48 +4,50 @@ const problems = [
   {
     icon: TrendingDown,
     stat: "96%",
-    title: "of website visitors leave without buying.",
-    description: "Most businesses have no system to bring them back. That's money walking out the door — every single day.",
+    title: "of people who visit your site leave without doing anything.",
+    description: "No call. No email. No purchase. They're gone — and they're not coming back unless you have a plan.",
   },
   {
     icon: Clock,
-    title: "Your best leads go cold in 5 minutes.",
     stat: "5 min",
-    description: "Harvard Business Review found that responding in 5 minutes is 100x more effective than waiting 30. Most businesses wait hours.",
+    title: "is all you get before a lead goes cold.",
+    description: "When someone's interested, the clock starts ticking. Wait too long and they'll go with whoever answers first.",
   },
   {
     icon: DollarSign,
     stat: "$0",
-    title: "is what a pretty website earns if nobody finds it.",
-    description: "Design means nothing without traffic. Traffic means nothing without conversions. You need the full system.",
+    title: "is what a great website earns if nobody sees it.",
+    description: "Looking good means nothing if people can't find you. You need the right people showing up — every day.",
   },
 ];
 
 const ProblemSection = () => {
   return (
-    <section id="problem" className="py-24 md:py-32 section-fade">
+    <section id="problem" className="py-20 md:py-28 section-cream">
       <div className="container px-6 max-w-6xl">
-        <p className="font-display text-sm uppercase tracking-[0.3em] text-primary mb-4 text-center">
-          The uncomfortable truth
-        </p>
-        <h2 className="font-display text-3xl md:text-5xl font-bold text-center mb-6">
-          Here's what's really <span className="text-gradient">costing you.</span>
-        </h2>
-        <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-16 text-lg">
-          It's not that you're doing something wrong. It's that you're missing pieces — and each missing piece leaks revenue.
-        </p>
+        <div className="text-center mb-14">
+          <p className="font-display text-sm font-semibold uppercase tracking-widest text-primary mb-3">
+            Sound familiar?
+          </p>
+          <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4">
+            Here's what's quietly <span className="text-primary">holding you back.</span>
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+            You're working hard. But without the right system, you're leaving money on the table every single day.
+          </p>
+        </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6">
           {problems.map((item, i) => (
             <div
               key={i}
-              className="bg-card border border-border rounded-2xl p-8 hover:border-primary/30 transition-all duration-500 hover:glow-box group"
+              className="bg-card border border-border rounded-2xl p-8 hover:shadow-lg hover:shadow-primary/5 transition-all duration-400 group"
             >
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                <item.icon className="w-6 h-6 text-primary" />
+              <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/15 transition-colors">
+                <item.icon className="w-5 h-5 text-primary" />
               </div>
-              <p className="font-display text-4xl font-bold text-gradient mb-3">{item.stat}</p>
-              <h3 className="font-display text-xl font-semibold mb-3">{item.title}</h3>
+              <p className="font-display text-4xl font-extrabold text-primary mb-2">{item.stat}</p>
+              <h3 className="font-display text-lg font-bold mb-2">{item.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{item.description}</p>
             </div>
           ))}
