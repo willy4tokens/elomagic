@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/90 backdrop-blur-xl border-b border-border">
       <div className="container flex items-center justify-between h-16 px-6">
-        <Link to="/" className="font-display text-2xl font-extrabold text-primary">
+        <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="font-display text-2xl font-extrabold text-primary">
           Elo
         </Link>
         <div className="flex items-center gap-6">
@@ -37,6 +37,12 @@ const Navbar = () => {
             className="hidden md:block text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
             Case Studies
+          </Link>
+          <Link
+            to={isHome ? "#simulator" : "/#simulator"}
+            className="hidden md:block text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
+            Growth Calculator
           </Link>
           <Button variant="hero" size="sm" onClick={handleCTA}>
             Get Your Free Growth Plan
