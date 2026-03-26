@@ -10,5 +10,26 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+# LLM crawlers — welcome, we want to be found
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
 User-agent: *
 Allow: /
+
+Sitemap: https://www.elo-magic.com/sitemap.xml
