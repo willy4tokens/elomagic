@@ -10,7 +10,6 @@ import SimulatorPage from "./pages/Simulator.tsx";
 import Blog from "./pages/Blog.tsx";
 import BlogPost from "./pages/BlogPost.tsx";
 import { CaseStudiesListing, CaseStudyDetail } from "./pages/CaseStudies.tsx";
-import CasaVerde from "./pages/CasaVerde.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import HashScroller from "./components/HashScroller.tsx";
 
@@ -32,7 +31,6 @@ const App = () => (
           <Route path="/case-studies" element={<CaseStudiesListing />} />
           <Route path="/case-studies/:slug" element={<CaseStudyDetail />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/casa-verde" element={<CasaVerde />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
