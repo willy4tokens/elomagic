@@ -22,9 +22,21 @@ const Navbar = () => {
         <div className="flex items-center gap-6">
           <Link
             to="/about"
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            className="hidden sm:block text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
             About
+          </Link>
+          <Link
+            to="/blog"
+            className="hidden sm:block text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
+            Blog
+          </Link>
+          <Link
+            to="/case-studies"
+            className="hidden md:block text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
+            Case Studies
           </Link>
           <Button variant="hero" size="sm" onClick={handleCTA}>
             Get Your Free Growth Plan

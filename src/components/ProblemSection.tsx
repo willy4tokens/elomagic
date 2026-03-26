@@ -1,23 +1,26 @@
-import { TrendingDown, Clock, DollarSign } from "lucide-react";
+import { EyeOff, Timer, TrendingUp } from "lucide-react";
 
 const problems = [
   {
-    icon: TrendingDown,
+    icon: EyeOff,
     stat: "96%",
-    title: "of people who visit your site leave without doing anything.",
-    description: "No call. No email. No purchase. They're gone — and they're not coming back unless you have a plan.",
+    title: "of visitors leave your website without ever contacting you.",
+    description:
+      "They found you. You just lost them. No call, no email, no booking — because nothing on your site made them stop and act.",
   },
   {
-    icon: Clock,
-    stat: "5 min",
-    title: "is all you get before a lead goes cold.",
-    description: "When someone's interested, the clock starts ticking. Wait too long and they'll go with whoever answers first.",
+    icon: Timer,
+    stat: "47 hrs",
+    title: "is how long most businesses take to respond to a new lead.",
+    description:
+      "The research is brutal: you have 5 minutes before a lead goes cold. Your competitor who answers in 2 minutes is stealing your customers — right now.",
   },
   {
-    icon: DollarSign,
-    stat: "$0",
-    title: "is what a great website earns if nobody sees it.",
-    description: "Looking good means nothing if people can't find you. You need the right people showing up — every day.",
+    icon: TrendingUp,
+    stat: "Today",
+    title: "someone searched for exactly what you do. They found your competitor.",
+    description:
+      "Not because your competitor is better. Because they show up and you don't. Visibility isn't vanity — it's revenue.",
   },
 ];
 
@@ -27,13 +30,15 @@ const ProblemSection = () => {
       <div className="container px-6 max-w-6xl">
         <div className="text-center mb-14">
           <p className="font-display text-sm font-semibold uppercase tracking-widest text-primary mb-3">
-            Sound familiar?
+            Every day you're open, this is happening
           </p>
           <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4">
-            Here's what's quietly <span className="text-primary">holding you back.</span>
+            You're working hard.{" "}
+            <span className="text-primary">The wrong people just can't find you.</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            You're working hard. But without the right system, you're leaving money on the table every single day.
+            It's not your product. It's not your price. It's the gap between how good you are
+            and how visible you are. That gap has a dollar amount.
           </p>
         </div>
 
