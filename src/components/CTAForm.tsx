@@ -120,7 +120,7 @@ const CTAForm = () => {
                 <Input
                   id="first_name"
                   name="first_name"
-                  placeholder="Sophie"
+                  placeholder="Jessica"
                   value={form.first_name}
                   onChange={handleChange}
                   required
@@ -132,7 +132,7 @@ const CTAForm = () => {
                 <Input
                   id="name"
                   name="name"
-                  placeholder="Martin"
+                  placeholder="Rivera"
                   value={form.name}
                   onChange={handleChange}
                   required
@@ -162,7 +162,7 @@ const CTAForm = () => {
                   id="email"
                   name="email"
                   type="email"
-                  placeholder="sophie@acme.com"
+                  placeholder="jessica@acme.com"
                   value={form.email}
                   onChange={handleChange}
                   required
@@ -175,7 +175,7 @@ const CTAForm = () => {
                   id="phone_number"
                   name="phone_number"
                   type="tel"
-                  placeholder="+33 6 12 34 56 78"
+                  placeholder="+1 (818) 555-0192"
                   value={form.phone_number}
                   onChange={handleChange}
                   disabled={status === "loading"}
