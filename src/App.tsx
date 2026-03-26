@@ -11,6 +11,7 @@ import Blog from "./pages/Blog.tsx";
 import BlogPost from "./pages/BlogPost.tsx";
 import { CaseStudiesListing, CaseStudyDetail } from "./pages/CaseStudies.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import HashScroller from "./components/HashScroller.tsx";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <HashScroller />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />

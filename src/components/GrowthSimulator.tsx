@@ -10,6 +10,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { ArrowRight, TrendingUp, DollarSign, Zap, Check } from "lucide-react";
+import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
 const PACKAGES = {
@@ -324,16 +325,11 @@ const GrowthSimulator = () => {
                       * Projections based on average client results. Individual outcomes vary.
                     </p>
                   </div>
-                  <Button
-                    variant="hero"
-                    size="lg"
-                    className="shrink-0 px-8"
-                    onClick={() =>
-                      document.getElementById("cta")?.scrollIntoView({ behavior: "smooth" })
-                    }
-                  >
-                    Get My Free Growth Plan
-                    <ArrowRight className="ml-2 w-4 h-4" />
+                  <Button variant="hero" size="lg" className="shrink-0 px-8" asChild>
+                    <Link to="/#cta">
+                      Get My Free Growth Plan
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Link>
                   </Button>
                 </div>
               </div>

@@ -249,16 +249,11 @@ const About = () => {
           <p className="text-lg text-muted-foreground mb-8">
             Get a free 15-minute growth plan. No pressure, no jargon — just clarity.
           </p>
-          <Button
-            variant="hero"
-            size="lg"
-            className="px-10 py-6 text-base"
-            onClick={() => {
-              window.location.href = "/#cta";
-            }}
-          >
-            Get My Free Growth Plan
-            <ArrowRight className="ml-2 w-5 h-5" />
+          <Button variant="hero" size="lg" className="px-10 py-6 text-base" asChild>
+            <Link to="/#cta">
+              Get My Free Growth Plan
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Link>
           </Button>
           <p className="text-sm text-muted-foreground mt-4">
             No credit card. No commitment.
