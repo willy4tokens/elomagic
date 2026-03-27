@@ -9,19 +9,17 @@ const HeroSection = () => {
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
           <div className="flex-1 text-center md:text-left">
             <div className="inline-block bg-primary/10 text-primary font-display font-semibold text-sm px-4 py-1.5 rounded-full mb-6">
-              For business owners tired of being the best-kept secret
+              For local business owners
             </div>
 
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-6 text-foreground">
-              The best business{" "}
-              <span className="text-primary">doesn't always win.</span>
-              <br />
-              The most visible one does.
+              Get more customers.{" "}
+              <span className="text-primary">Every week.</span>
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-8 leading-relaxed">
-              Every day, people search for exactly what you do — and find your competitor instead.
-              We fix that. Permanently.
+              People search for you every day. They find someone else instead.
+              We fix that — fast.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
@@ -31,7 +29,7 @@ const HeroSection = () => {
                 className="px-8 py-6 text-base"
                 onClick={() => document.getElementById("simulator")?.scrollIntoView({ behavior: "smooth" })}
               >
-                See What You're Missing
+                See What You're Losing
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button
@@ -45,7 +43,7 @@ const HeroSection = () => {
             </div>
 
             <p className="text-sm text-muted-foreground mt-5">
-              ✓ Free 15-min audit &nbsp;·&nbsp; ✓ No pressure &nbsp;·&nbsp; ✓ Results in 30 days
+              ✓ First results in 30 days &nbsp;·&nbsp; ✓ No contracts &nbsp;·&nbsp; ✓ Free audit
             </p>
           </div>
 

@@ -4,23 +4,23 @@ const problems = [
   {
     icon: EyeOff,
     stat: "96%",
-    title: "of visitors leave your website without ever contacting you.",
+    title: "of visitors leave without calling you.",
     description:
-      "They found you. You just lost them. No call, no email, no booking — because nothing on your site made them stop and act.",
+      "They found you. Then they left. Nothing on your site made them pick up the phone.",
   },
   {
     icon: Timer,
     stat: "47 hrs",
-    title: "is how long most businesses take to respond to a new lead.",
+    title: "is how long most businesses take to reply to a new lead.",
     description:
-      "The research is brutal: you have 5 minutes before a lead goes cold. Your competitor who answers in 2 minutes is stealing your customers — right now.",
+      "You have 5 minutes before a lead goes cold. Your competitor answers in 2. That's your customer, gone.",
   },
   {
     icon: TrendingUp,
     stat: "Today",
-    title: "someone searched for exactly what you do. They found your competitor.",
+    title: "someone searched for what you do. They hired your competitor.",
     description:
-      "Not because your competitor is better. Because they show up and you don't. Visibility isn't vanity — it's revenue.",
+      "Not because they're better. Because they showed up and you didn't.",
   },
 ];
 
@@ -30,15 +30,14 @@ const ProblemSection = () => {
       <div className="container px-6 max-w-6xl">
         <div className="text-center mb-14">
           <p className="font-display text-sm font-semibold uppercase tracking-widest text-primary mb-3">
-            Every day you're open, this is happening
+            What's happening right now
           </p>
           <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4">
-            You're working hard.{" "}
-            <span className="text-primary">The wrong people just can't find you.</span>
+            You're losing customers{" "}
+            <span className="text-primary">you don't even know about.</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            It's not your product. It's not your price. It's the gap between how good you are
-            and how visible you are. That gap has a dollar amount.
+            Not because your work is bad. Because people can't find you.
           </p>
         </div>
 

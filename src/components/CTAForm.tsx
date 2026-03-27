@@ -72,13 +72,13 @@ const CTAForm = () => {
         {/* Header */}
         <div className="text-center mb-10">
           <p className="font-display text-sm font-semibold uppercase tracking-widest text-primary mb-3">
-            Ready to grow?
+            Free growth plan
           </p>
           <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-5">
-            Get your free <span className="text-primary">growth plan.</span>
+            Let's get you <span className="text-primary">more customers.</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            We'll look at your business, find the gaps, and show you exactly how to get more customers. No confusing jargon. No pressure.
+            Tell us about your business. We'll show you exactly what's missing. Free. No pressure.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-6">
             {[

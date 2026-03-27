@@ -4,21 +4,21 @@ import { Check } from "lucide-react";
 
 const services = [
   {
-    label: "A Website That Closes for You — 24/7",
+    label: "A Website That Gets You Calls",
     points: [
-      "Right now, your website is a brochure. We rebuild it as your best salesperson.",
-      "Visitors land, they trust, they act — on every device, every screen size.",
-      "Every word, every button, every layout decision made to convert — not impress.",
+      "Works on every phone and screen.",
+      "Built to get you calls — not just clicks.",
+      "Earns you leads while you sleep.",
     ],
     image: teamMeeting,
     imageAlt: "Team building a high-converting website strategy",
   },
   {
-    label: "Show Up First When It Matters Most",
+    label: "Show Up First on Google",
     points: [
-      "Someone near you just searched for what you do. We make sure they find you first.",
-      "AI-powered targeting so your budget goes where your best customers already are.",
-      "More calls, more bookings — from people who are already ready to buy.",
+      "People near you search. They find you first.",
+      "More calls from buyers who are ready now.",
+      "We track what works and cut what doesn't.",
     ],
     image: teamWork,
     imageAlt: "Team mapping out a local SEO and visibility strategy",
@@ -31,15 +31,14 @@ const ValueSection = () => {
       <div className="container px-6 max-w-6xl">
         <div className="text-center mb-16">
           <p className="font-display text-sm font-semibold uppercase tracking-widest text-primary mb-3">
-            What changes when you work with Elo
+            What you get
           </p>
           <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4">
             You stop chasing.{" "}
-            <span className="text-primary">Customers start coming.</span>
+            <span className="text-primary">Customers come to you.</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            We connect every piece — so the right people find you, trust you, and choose you.
-            While you focus on the work you actually love.
+            We set it up. It runs while you work.
           </p>
         </div>
 
@@ -79,19 +78,16 @@ const ValueSection = () => {
         <div className="mt-20 grid md:grid-cols-2 gap-6">
           <div className="bg-card border border-border rounded-2xl p-9 hover:shadow-lg hover:shadow-primary/5 transition-all duration-400">
             <h3 className="font-display text-xl font-bold mb-3">
-              You Stop Following Up. The System Does.
+              Follow-Up on Autopilot
             </h3>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              67% of leads need 5+ touchpoints before they say yes. Almost no business follows up that
-              many times. Ours does — automatically, personally, every single time — while you focus on the job.
+              Most leads need 5+ messages before they say yes. Almost no one sends them. We do — automatically — while you focus on the job.
             </p>
           </div>
           <div className="bg-card border border-border rounded-2xl p-9 hover:shadow-lg hover:shadow-primary/5 transition-all duration-400">
-            <h3 className="font-display text-xl font-bold mb-3">Never Miss a Lead Again</h3>
+            <h3 className="font-display text-xl font-bold mb-3">Never Miss a Call Again</h3>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Our AI voice agent answers every call — nights, weekends, when you're on a job. Every
-              inquiry gets a response in under 2 minutes. The lead that waits 47 hours goes to whoever
-              answered first. That's us.
+              Our system answers every call — nights, weekends, while you're on a job. Every lead gets a reply in under 2 minutes. The one who answers first wins.
             </p>
           </div>
         </div>

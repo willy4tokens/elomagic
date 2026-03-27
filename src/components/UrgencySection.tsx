@@ -17,26 +17,26 @@ const UrgencySection = () => {
           </div>
           <div className="flex-1">
             <p className="font-display text-sm font-semibold uppercase tracking-widest text-primary mb-3">
-              The math is simple. And it hurts.
+              The cost of waiting
             </p>
             <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-6">
-              What staying invisible is{" "}
-              <span className="text-primary">costing you every month.</span>
+              Every week you wait,{" "}
+              <span className="text-primary">you lose real money.</span>
             </h2>
 
             <div className="space-y-5 mb-8">
               {[
                 {
                   value: "67%",
-                  text: "of your potential customers research online before they ever pick up the phone. If you're not visible, you don't exist.",
+                  text: "of buyers look online before they call. If you're not there, you don't exist.",
                 },
                 {
                   value: "$8,400",
-                  text: "is the average additional monthly revenue our clients see in their first 90 days. That's money on the table right now.",
+                  text: "extra per month — that's what our clients earn on average in their first 90 days.",
                 },
                 {
                   value: "2 min",
-                  text: "is how fast our system responds to a new lead. The industry average is 47 hours. That gap is where your competitor wins.",
+                  text: "is how fast we reply to a new lead. Most businesses take 47 hours. First to reply wins.",
                 },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-4">
@@ -49,9 +49,8 @@ const UrgencySection = () => {
             </div>
 
             <p className="text-lg text-foreground leading-relaxed">
-              You don't have a business problem.{" "}
-              <span className="font-semibold">You have a visibility problem.</span> And every
-              week you wait is another week your competitors take work that belongs to you.
+              It's not your product.{" "}
+              <span className="font-semibold">It's that people can't find you.</span> Every week you wait is another week your competitor gets your customers.
             </p>
           </div>
         </div>

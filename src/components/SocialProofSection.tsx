@@ -8,21 +8,21 @@ const testimonials = [
     name: "Sarah M.",
     role: "Owner, Bloom Dental Studio",
     image: person3,
-    quote: "We went from maybe 5 new patients a month to over 30. I didn't even know that was possible for a practice our size.",
+    quote: "We went from 5 new patients a month to over 30. I had no idea that was possible.",
     stat: "6x more leads",
   },
   {
     name: "James R.",
     role: "Founder, GreenPath Landscaping",
     image: person2,
-    quote: "I used to spend half my day chasing leads. Now they come to me. Elo set everything up and it just... works.",
+    quote: "I used to chase leads all day. Now they come to me. Elo set it up and it just works.",
     stat: "70% less time on sales",
   },
   {
     name: "Maria L.",
     role: "Owner, Casa Bella Interiors",
     image: businessOwner,
-    quote: "Our old website looked fine but did nothing. Within 2 months of working with Elo, our revenue was up 40%.",
+    quote: "My old site looked fine but did nothing. Two months with Elo and revenue was up 40%.",
     stat: "40% revenue increase",
   },
 ];
@@ -33,10 +33,10 @@ const SocialProofSection = () => {
       <div className="container px-6 max-w-6xl">
         <div className="text-center mb-14">
           <p className="font-display text-sm font-semibold uppercase tracking-widest text-primary mb-3">
-            Real results from real businesses
+            Real results
           </p>
           <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4">
-            They were where you are. <span className="text-primary">Look where they are now.</span>
+            They were stuck too. <span className="text-primary">Here's what changed.</span>
           </h2>
         </div>
 
