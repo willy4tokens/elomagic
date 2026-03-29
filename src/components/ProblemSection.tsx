@@ -3,22 +3,22 @@ import { EyeOff, Timer, TrendingUp } from "lucide-react";
 const problems = [
   {
     icon: EyeOff,
-    stat: "96%",
-    title: "of visitors leave without calling you.",
+    stat: "73%",
+    title: "of homeowners hire the first contractor they find online.",
     description:
-      "They found you. Then they left. Nothing on your site made them pick up the phone.",
+      "They're not waiting for referrals anymore. If you're not on page one, you don't exist.",
   },
   {
     icon: Timer,
-    stat: "47 hrs",
-    title: "is how long most businesses take to reply to a new lead.",
+    stat: "$12,400",
+    title: "average job value lost every time a lead goes cold.",
     description:
-      "You have 5 minutes before a lead goes cold. Your competitor answers in 2. That's your customer, gone.",
+      "You missed one call. They hired someone else. That's a kitchen remodel gone.",
   },
   {
     icon: TrendingUp,
     stat: "Today",
-    title: "someone searched for what you do. They hired your competitor.",
+    title: "a homeowner searched 'general contractor near me'. Your competitor answered.",
     description:
       "Not because they're better. Because they showed up and you didn't.",
   },
@@ -33,11 +33,11 @@ const ProblemSection = () => {
             What's happening right now
           </p>
           <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4">
-            You're losing customers{" "}
+            You're losing jobs{" "}
             <span className="text-primary">you don't even know about.</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Not because your work is bad. Because people can't find you.
+            Not because your work is bad. Because homeowners can't find you.
           </p>
         </div>
 

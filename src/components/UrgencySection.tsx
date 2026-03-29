@@ -20,23 +20,23 @@ const UrgencySection = () => {
               The cost of waiting
             </p>
             <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-6">
-              Every week you wait,{" "}
-              <span className="text-primary">you lose real money.</span>
+              The contractors who go digital first{" "}
+              <span className="text-primary">win the whole market.</span>
             </h2>
 
             <div className="space-y-5 mb-8">
               {[
                 {
-                  value: "67%",
-                  text: "of buyers look online before they call. If you're not there, you don't exist.",
+                  value: "73%",
+                  text: "of homeowners hire the first contractor they find. Second place doesn't get a call.",
                 },
                 {
-                  value: "$8,400",
-                  text: "extra per month — that's what our clients earn on average in their first 90 days.",
+                  value: "$12,400",
+                  text: "average job value lost per cold lead. One missed call is a remodel you'll never get back.",
                 },
                 {
                   value: "2 min",
-                  text: "is how fast we reply to a new lead. Most businesses take 47 hours. First to reply wins.",
+                  text: "is how fast our system replies to a new lead. Most contractors take 47 hours. First to reply wins.",
                 },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-4">
@@ -49,8 +49,8 @@ const UrgencySection = () => {
             </div>
 
             <p className="text-lg text-foreground leading-relaxed">
-              It's not your product.{" "}
-              <span className="font-semibold">It's that people can't find you.</span> Every week you wait is another week your competitor gets your customers.
+              Your market is small.{" "}
+              <span className="font-semibold">One contractor will dominate it online.</span> Every week you wait, that contractor is your competition — not you.
             </p>
           </div>
         </div>

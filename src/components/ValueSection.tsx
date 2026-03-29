@@ -6,22 +6,22 @@ const services = [
   {
     label: "A Website That Gets You Calls",
     points: [
-      "Works on every phone and screen.",
-      "Built to get you calls — not just clicks.",
-      "Earns you leads while you sleep.",
+      "Shows your past projects, licenses & reviews — everything homeowners need to say yes.",
+      "Built to convert visitors into calls and quote requests.",
+      "Works perfectly on mobile, where 80% of searches happen.",
     ],
     image: teamMeeting,
-    imageAlt: "Team building a high-converting website strategy",
+    imageAlt: "Contractor website built to convert visitors into calls",
   },
   {
-    label: "Show Up First on Google",
+    label: "Rank #1 on Google Maps in Your Area",
     points: [
-      "People near you search. They find you first.",
-      "More calls from buyers who are ready now.",
-      "We track what works and cut what doesn't.",
+      "When someone searches 'contractor near me', your business shows up first.",
+      "We optimize your Google Business Profile and build local authority.",
+      "More calls from homeowners who are ready to hire now.",
     ],
     image: teamWork,
-    imageAlt: "Team mapping out a local SEO and visibility strategy",
+    imageAlt: "Local SEO strategy for contractors in California",
   },
 ];
 
@@ -81,13 +81,13 @@ const ValueSection = () => {
               Follow-Up on Autopilot
             </h3>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Most leads need 5+ messages before they say yes. Almost no one sends them. We do — automatically — while you focus on the job.
+              Most homeowners get 3+ quotes. Our system follows up automatically by SMS and email so you stay top of mind until they're ready to sign.
             </p>
           </div>
           <div className="bg-card border border-border rounded-2xl p-9 hover:shadow-lg hover:shadow-primary/5 transition-all duration-400">
-            <h3 className="font-display text-xl font-bold mb-3">Never Miss a Call Again</h3>
+            <h3 className="font-display text-xl font-bold mb-3">Never Miss a Lead Again</h3>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Our system answers every call — nights, weekends, while you're on a job. Every lead gets a reply in under 2 minutes. The one who answers first wins.
+              Our AI answers every missed call and texts back instantly — nights, weekends, while you're on a job. The contractor who replies first gets the job.
             </p>
           </div>
         </div>

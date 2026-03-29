@@ -12,6 +12,14 @@ import BlogPost from "./pages/BlogPost.tsx";
 import { CaseStudiesListing, CaseStudyDetail } from "./pages/CaseStudies.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import HashScroller from "./components/HashScroller.tsx";
+import GeneralContractor from "./pages/GeneralContractor.tsx";
+import {
+  LosAngelesPage,
+  SanDiegoPage,
+  FresnoPage,
+  SacramentoPage,
+  SanJosePage,
+} from "./pages/LocationPage.tsx";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +39,12 @@ const App = () => (
           <Route path="/case-studies" element={<CaseStudiesListing />} />
           <Route path="/case-studies/:slug" element={<CaseStudyDetail />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/services/general-contractor" element={<GeneralContractor />} />
+          <Route path="/los-angeles-general-contractor" element={<LosAngelesPage />} />
+          <Route path="/san-diego-general-contractor" element={<SanDiegoPage />} />
+          <Route path="/fresno-general-contractor" element={<FresnoPage />} />
+          <Route path="/sacramento-general-contractor" element={<SacramentoPage />} />
+          <Route path="/san-jose-general-contractor" element={<SanJosePage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

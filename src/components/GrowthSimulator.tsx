@@ -63,17 +63,16 @@ const PACKAGES = {
 type PackageKey = keyof typeof PACKAGES;
 
 const INDUSTRIES = [
-  "Plumbing / HVAC",
-  "Dental / Healthcare",
-  "Landscaping",
-  "Real Estate",
-  "Restaurant / Food",
-  "Gym / Fitness",
-  "Salon / Spa",
-  "Legal Services",
-  "Home Remodeling",
-  "Interior Design",
-  "Retail",
+  "General Contracting",
+  "Kitchen Remodeling",
+  "Bathroom Remodeling",
+  "Home Additions / ADU",
+  "Roofing",
+  "Flooring",
+  "Painting",
+  "HVAC / Plumbing",
+  "Landscaping / Hardscape",
+  "Commercial Construction",
   "Other",
 ];
 
@@ -114,11 +113,11 @@ const GrowthSimulator = () => {
             Growth calculator
           </p>
           <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4">
-            See exactly what Elo is worth{" "}
-            <span className="text-primary">to your business.</span>
+            See exactly how many jobs{" "}
+            <span className="text-primary">you're leaving on the table.</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto text-lg">
-            Put in your numbers. Pick a package. See the gap you're leaving on the table — every single month.
+            Put in your numbers. Pick a plan. See what you're missing every single month.
           </p>
         </div>
 
@@ -127,10 +126,10 @@ const GrowthSimulator = () => {
           <div className="p-8 border-b border-border">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
               <div className="space-y-1.5">
-                <Label>Your industry</Label>
+                <Label>Type of work</Label>
                 <Select value={industry} onValueChange={setIndustry}>
                   <SelectTrigger>
-                    <SelectValue placeholder="Select industry" />
+                    <SelectValue placeholder="Select project type" />
                   </SelectTrigger>
                   <SelectContent>
                     {INDUSTRIES.map((ind) => (
@@ -142,23 +141,23 @@ const GrowthSimulator = () => {
                 </Select>
               </div>
               <div className="space-y-1.5">
-                <Label htmlFor="avg-value">Average job / transaction value ($)</Label>
+                <Label htmlFor="avg-value">Average project value ($)</Label>
                 <Input
                   id="avg-value"
                   type="number"
                   min="0"
-                  placeholder="e.g. 800"
+                  placeholder="e.g. 12000"
                   value={avgValue}
                   onChange={(e) => setAvgValue(e.target.value)}
                 />
               </div>
               <div className="space-y-1.5">
-                <Label htmlFor="customers">New customers per month (now)</Label>
+                <Label htmlFor="customers">New jobs per month (now)</Label>
                 <Input
                   id="customers"
                   type="number"
                   min="0"
-                  placeholder="e.g. 10"
+                  placeholder="e.g. 4"
                   value={currentCustomers}
                   onChange={(e) => setCurrentCustomers(e.target.value)}
                 />
@@ -248,7 +247,7 @@ const GrowthSimulator = () => {
                     </p>
                     <p className="text-sm text-muted-foreground mt-1">/month</p>
                     <p className="text-sm text-muted-foreground mt-2">
-                      {current} new customers × {fmt(avg)} avg value
+                      {current} jobs × {fmt(avg)} avg value
                     </p>
                   </div>
                   <div className="bg-primary/5 border border-primary/20 rounded-xl p-5">
@@ -260,7 +259,7 @@ const GrowthSimulator = () => {
                     </p>
                     <p className="text-sm text-muted-foreground mt-1">/month</p>
                     <p className="text-sm text-muted-foreground mt-2">
-                      {newCustomers} new customers × {fmt(avg)} avg value
+                      {newCustomers} jobs × {fmt(avg)} avg value
                     </p>
                   </div>
                 </div>
@@ -269,7 +268,7 @@ const GrowthSimulator = () => {
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                   {[
                     {
-                      label: "Extra customers/mo",
+                      label: "Extra jobs/mo",
                       value: `+${additionalCustomers}`,
                       highlight: false,
                     },
@@ -327,7 +326,7 @@ const GrowthSimulator = () => {
                   </div>
                   <Button variant="hero" size="lg" className="shrink-0 px-8" asChild>
                     <Link to="/#cta">
-                      Get My Free Growth Plan
+                      Get My Free Visibility Audit
                       <ArrowRight className="ml-2 w-4 h-4" />
                     </Link>
                   </Button>

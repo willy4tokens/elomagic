@@ -5,25 +5,25 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah M.",
-    role: "Owner, Bloom Dental Studio",
+    name: "Mike T.",
+    role: "General Contractor, Los Angeles",
     image: person3,
-    quote: "We went from 5 new patients a month to over 30. I had no idea that was possible.",
-    stat: "6x more leads",
+    quote: "My phone barely rang before Elo. Now I get 3–4 calls a week just from Google. I had to hire another crew.",
+    stat: "4x more inbound calls",
   },
   {
-    name: "James R.",
-    role: "Founder, GreenPath Landscaping",
+    name: "Sandra R.",
+    role: "Remodeling Contractor, San Diego",
     image: person2,
-    quote: "I used to chase leads all day. Now they come to me. Elo set it up and it just works.",
-    stat: "70% less time on sales",
+    quote: "No more tire-kickers. The leads I get now already know my prices and want to book. Night and day difference.",
+    stat: "Qualified leads only",
   },
   {
-    name: "Maria L.",
-    role: "Owner, Casa Bella Interiors",
+    name: "Carlos M.",
+    role: "Roofing & Construction, Fresno",
     image: businessOwner,
-    quote: "My old site looked fine but did nothing. Two months with Elo and revenue was up 40%.",
-    stat: "40% revenue increase",
+    quote: "I was skeptical. Within 6 weeks I had more work than I could handle. The system runs on its own.",
+    stat: "ROI in 6 weeks",
   },
 ];
 
@@ -33,7 +33,7 @@ const SocialProofSection = () => {
       <div className="container px-6 max-w-6xl">
         <div className="text-center mb-14">
           <p className="font-display text-sm font-semibold uppercase tracking-widest text-primary mb-3">
-            Real results
+            Real contractors. Real results.
           </p>
           <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-4">
             They were stuck too. <span className="text-primary">Here's what changed.</span>

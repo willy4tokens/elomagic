@@ -9,17 +9,18 @@ const HeroSection = () => {
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
           <div className="flex-1 text-center md:text-left">
             <div className="inline-block bg-primary/10 text-primary font-display font-semibold text-sm px-4 py-1.5 rounded-full mb-6">
-              For local business owners
+              For General Contractors in California
             </div>
 
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-6 text-foreground">
-              Get more customers.{" "}
-              <span className="text-primary">Every week.</span>
+              Get More Roofing, Remodeling{" "}
+              <span className="text-primary">&amp; Construction Jobs.</span>{" "}
+              Every Week.
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-8 leading-relaxed">
-              People search for you every day. They find someone else instead.
-              We fix that — fast.
+              Homeowners in your area search for contractors every day. They hire whoever shows up first.
+              We make sure that's you.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">

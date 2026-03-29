@@ -15,20 +15,16 @@ import { ArrowRight, Loader2, CheckCircle2, AlertCircle, Gift, Clock, Phone } fr
 const WEBHOOK_URL = "https://hook.eu2.make.com/k5jnogmi3rxsk2bruv6ivzppkh3svd8v";
 
 const INDUSTRIES = [
-  "Retail",
-  "E-commerce",
-  "Healthcare",
-  "Real Estate",
-  "Financial Services",
-  "Technology",
-  "Hospitality & Tourism",
-  "Construction & Trades",
-  "Professional Services",
-  "Education",
-  "Food & Beverage",
-  "Marketing & Advertising",
-  "Manufacturing",
-  "Non-profit",
+  "General Contracting",
+  "Kitchen Remodeling",
+  "Bathroom Remodeling",
+  "Home Additions / ADU",
+  "Roofing",
+  "Flooring",
+  "Painting",
+  "HVAC / Plumbing",
+  "Landscaping / Hardscape",
+  "Commercial Construction",
   "Other",
 ];
 
@@ -72,13 +68,13 @@ const CTAForm = () => {
         {/* Header */}
         <div className="text-center mb-10">
           <p className="font-display text-sm font-semibold uppercase tracking-widest text-primary mb-3">
-            Free growth plan
+            Free visibility audit
           </p>
           <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-5">
-            Let's get you <span className="text-primary">more customers.</span>
+            Let's get you <span className="text-primary">more construction jobs.</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            Tell us about your business. We'll show you exactly what's missing. Free. No pressure.
+            Tell us about your contracting business. We'll show you exactly why you're not ranking — and how to fix it. Free. No pressure.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-6">
             {[
@@ -206,11 +202,11 @@ const CTAForm = () => {
 
             {/* Message */}
             <div className="space-y-1.5">
-              <Label htmlFor="message">Tell us about your business</Label>
+              <Label htmlFor="message">Tell us about your contracting business</Label>
               <Textarea
                 id="message"
                 name="message"
-                placeholder="What's your biggest challenge right now? What are your growth goals?"
+                placeholder="What types of projects do you specialize in? What cities do you serve? What's your biggest challenge right now?"
                 rows={4}
                 value={form.message}
                 onChange={handleChange}
@@ -233,7 +229,7 @@ const CTAForm = () => {
                 </>
               ) : (
                 <>
-                  Get My Free Growth Plan
+                  Get My Free Visibility Audit
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </>
               )}
