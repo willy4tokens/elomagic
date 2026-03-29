@@ -1,6 +1,9 @@
-import teamMeeting from "@/assets/team-meeting.jpg";
-import teamWork from "@/assets/team-work.jpg";
 import { Check } from "lucide-react";
+
+// Contractor reviewing project photos on tablet with homeowner
+const teamMeeting = "https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=1200&q=80&fit=crop";
+// Contractor on the job site, work in progress
+const teamWork = "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=80&fit=crop";
 
 const services = [
   {

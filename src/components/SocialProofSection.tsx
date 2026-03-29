@@ -1,7 +1,11 @@
-import person2 from "@/assets/person2.jpg";
-import person3 from "@/assets/person3.jpg";
-import businessOwner from "@/assets/business-owner.jpg";
 import { Star } from "lucide-react";
+
+// Mike T. — General Contractor, Los Angeles
+const person3 = "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&h=200&q=80&fit=crop&crop=face";
+// Sandra R. — Remodeling Contractor, San Diego
+const person2 = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&q=80&fit=crop&crop=face";
+// Carlos M. — Roofing & Construction, Fresno
+const businessOwner = "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=200&h=200&q=80&fit=crop&crop=face";
 
 const testimonials = [
   {

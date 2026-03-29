@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import heroPeople from "@/assets/hero-people.jpg";
 import { ArrowRight } from "lucide-react";
+
+const heroPeople = "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=80&fit=crop";
 
 const HeroSection = () => {
   return (
@@ -52,7 +53,7 @@ const HeroSection = () => {
             <div className="rounded-3xl overflow-hidden shadow-2xl shadow-primary/10 border border-border">
               <img
                 src={heroPeople}
-                alt="Business owner finally getting the customers they deserve"
+                alt="General contractors working on a construction site in California"
                 className="w-full h-auto object-cover"
                 width={1400}
                 height={934}

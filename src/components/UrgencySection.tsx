@@ -1,4 +1,5 @@
-import officeSpace from "@/assets/office-space.jpg";
+// Kitchen renovation in progress — the cost of a missed job
+const officeSpace = "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80&fit=crop";
 
 const UrgencySection = () => {
   return (
@@ -9,7 +10,7 @@ const UrgencySection = () => {
             <div className="rounded-2xl overflow-hidden shadow-xl shadow-foreground/5 border border-border">
               <img
                 src={officeSpace}
-                alt="The real cost of staying invisible"
+                alt="Kitchen renovation project — the type of job you're missing without visibility"
                 loading="lazy"
                 className="w-full h-auto object-cover"
               />
